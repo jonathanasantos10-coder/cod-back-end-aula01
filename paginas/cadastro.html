@@ -25,7 +25,7 @@
     <label for="sexo"> Sexo </label>
     <input type="radio" name="sexo" id="sxF" class="input-radio" required value="F"> Feminino
     <input type="radio" name="sexo" id="sxM" class="input-radio" required value="M"> Masculino
-    <input type="radio" name="sexo" id="sxND" class="input-radio" required value="N"> Não declarar
+    <input type="radio" name="sexo" id="sxND" class="input-radio" required value="N" checked> Não declarar
 
     <select name="estado" id="estado" class="input-txt02" required>
         <option value="Al"> Alagoas</option>
@@ -36,17 +36,31 @@
         <option value="Ce"> Ceará</option>
         <option value="Pi"> Piauí </option>
         <option value="Ma"> Maranhão</option>
-        <option value="Se"> Sergipe </option>
+        <option value="Se" selected> Sergipe </option>
     </select>
     
     <label for="preferencias"> Preferências </label>
     <input type="checkbox" name="estudo" class="input-check" id="estudo" value="estudo"> Estudo 
-    <input type="checkbox" name="viagem" class="input-check" id="viagem" value="viagem"> Viagem        
+    <input type="checkbox" name="viagem" class="input-check" id="viagem" value="viagem" checked> Viagem        
     <input type="checkbox" name="trabalho" class="input-check" id="trabalho" value="trabalho"> Trabalho
     <input type="checkbox" name="compras" class="input-check" id="compras" value="compras"> Compras
 
     <label for="comentario"> Comentário</label>
-    <textarea name="comentario" id="comentario"></textarea>
+    <textarea name="comentario" id="comentario" placeholder="Digite seu comentário"></textarea>
+
+    <label for="senha"> Senha</label>
+    <input type="password" name="senha" id="senha" class="input-txt02" required placeholder="Informe uma senha" maxlength="6">
+
+    <label for="bday"> Data de nascimento </label>
+    <input type="date" name="bday" id="bday" class="input-txt02" required>
+
+    <Label for="quantidade"> Quantidade </Label> 
+    <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" value="2">
+
+
+
+
+
 
 </div>
 
